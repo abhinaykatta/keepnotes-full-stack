@@ -1,0 +1,63 @@
+.main {
+    min-width: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 95px;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+}
+
+.subtitle {
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.intro-text {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.landing-button {
+    width: 150px;
+    height: 40px;
+}
+
+@media only screen and (min-width : 1200px) {
+    .button-container {
+        padding: 0 200px;
+    }
+
+    .title {
+        padding: 0 200px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .landing-button {
+        font-size: 60px;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    .landing-button {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
