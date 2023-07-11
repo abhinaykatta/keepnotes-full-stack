@@ -8,11 +8,13 @@ const {
 } = require("./Middlewares/errorMiddlewareHandler");
 const noteRoutes = require("./Routes/noteRoutes");
 const path = require("path");
+const cors = require("cors");
 
 const app = express();
 dotenv.config();
 connectDB();
 app.use(express.json());
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("API is running!");

@@ -25,11 +25,15 @@ const LandingPage = () => {
                             <p className='subtitle'>One place for all your notes!</p>
                         </div>
                         <div className='button-container'>
-                            <a href="/Login">
-                                <Button size='lg' className='landing-button'>Login</Button>
+                            <a>
+                                <Button size='lg' className='landing-button' onClick={() => {
+                                    navigator("/login");
+                                }}>Login</Button>
                             </a>
-                            <a href="/Register">
-                                <Button size='lg' className='landing-button' variant='outline-primary'>Sign Up</Button>
+                            <a>
+                                <Button size='lg' className='landing-button' variant='outline-primary' onClick={() => {
+                                    navigator("/login");
+                                }}>Sign Up</Button>
                             </a>
                         </div>
                     </div>
