@@ -1,0 +1,12 @@
+.parentdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-title h3 {
+    font-family: "McLaren", cursive;
+    font-size: 30px;
+    padding-top: 100px;
+    margin-left: 20px;
+}
