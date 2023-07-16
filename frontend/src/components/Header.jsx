@@ -41,7 +41,7 @@ function Header() {
                         {
                             !userInfo && <Nav.Link>
                                 <Link to="/login">
-                                    Login
+                                    <b>Login</b>
                                 </Link></Nav.Link>
                         }
                     </Navbar.Collapse>

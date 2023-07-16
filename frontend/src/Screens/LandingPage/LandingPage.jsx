@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Container, Button, Row } from 'react-bootstrap';
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import MainScreen from '../../components/MainScreen';
 import './LandingPage.css';
 
 const LandingPage = () => {
@@ -16,7 +17,7 @@ const LandingPage = () => {
         }
     }, [userInfo, navigator]);
     return (
-        <div className='main'>
+        <MainScreen>
             <Container>
                 <Row>
                     <div className="intro-text">
@@ -32,14 +33,14 @@ const LandingPage = () => {
                             </a>
                             <a>
                                 <Button size='lg' className='landing-button' variant='outline-primary' onClick={() => {
-                                    navigator("/login");
+                                    navigator("/register");
                                 }}>Sign Up</Button>
                             </a>
                         </div>
                     </div>
                 </Row>
             </Container>
-        </div>
+        </MainScreen>
     )
 }
 

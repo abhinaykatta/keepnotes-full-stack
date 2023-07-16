@@ -33,7 +33,7 @@ function Login() {
     <MainScreen title="Login">
       <div className="loginContainer">
         {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
-        {loading && <Loading />}
+        {loading && <Loading size={30} />}
         <Form onSubmit={submitHandler}>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>

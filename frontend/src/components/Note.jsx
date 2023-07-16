@@ -13,7 +13,7 @@ function Note(props) {
 
     const fun = async (e) => {
         e.preventDefault();
-        if (window.confirm("Are you sure?")) {
+        if (window.confirm("Are you sure, You want to delete it?")) {
             await dispatch(deleteNoteAction(props.id));
             navigate("/")
         }

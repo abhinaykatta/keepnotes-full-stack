@@ -42,8 +42,8 @@ function CreateNote() {
             {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
             {loading && <Loading size={20} />}
             <form className="create-note">
-                <input type="text" placeholder={isopen ? "Title" : "Create Note"} name="title" onClick={expand} onChange={evt => setTitle(evt.target.value)} value={title}></input>
-                {isopen && <textarea placeholder="Content" name="content" onChange={(evt) => setContent(evt.target.value)} value={content} row='3' ></textarea>}
+                <input type="text" placeholder={isopen ? "Title" : "Create Note"} name="title" onClick={expand} onChange={evt => setTitle(evt.target.value)} value={title} required></input>
+                {isopen && <textarea placeholder="Content" name="content" onChange={(evt) => setContent(evt.target.value)} value={content} row='3' required></textarea>}
                 <Zoom in={isopen}>
                     <Fab onClick={fun}><AddIcon /></Fab>
                 </Zoom>

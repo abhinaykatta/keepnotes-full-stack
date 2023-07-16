@@ -22,9 +22,15 @@ body {
 }
 
 .head {
-    color: #fff;
-    font-family: "McLaren", cursive;
     font-weight: 200;
+}
+
+.navbar {
+    font-family: "McLaren", cursive;
+}
+
+.navdropdown.item {
+    color: blue;
 }
 
 .footer {
